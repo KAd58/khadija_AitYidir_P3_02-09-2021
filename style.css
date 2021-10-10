@@ -468,7 +468,8 @@ i
     align-items: center;
     justify-content:center;
     width:100%;
-    height:auto;
+    /*height:auto;*/
+   
 }
 
 .border_menu
@@ -507,11 +508,10 @@ i
 {
     border:2px solid transparent;
     background-color:#F2F2F2;
-    border-radius: 30px 30px 0 0;
+    border-radius: 35px 35px 0 0;
     position:relative;
-    top:-50px;
-    padding-bottom: 40px;
-    
+    margin-top:-50px;  
+    padding-bottom: 40px; 
 }
 .price
 {
@@ -627,6 +627,7 @@ i
     body 
     {
         width:auto;
+        margin-left:0;
     }
     form 
     {
@@ -639,16 +640,23 @@ i
     }
     .carte
     {
-        width:45%;
+        width:40%;
         margin-left:30px;
     }
     .carte .new{
         margin-left:390px;
     }
-
+    .border_menu
+    {
+        width:40%;
+    }
     .bloc_footer
     {
         text-align: left;
+    }
+    .logo
+    {
+        margin-right:380px;
     }
 }
 @media all and (max-width:800px)
@@ -682,7 +690,14 @@ i
     {
         margin-left:180px;
     }
-   
+    .border_menu
+    {
+        width:40%;
+    }
+    .logo
+    {
+        margin-right:270px;
+    }
 }
 @media all and (max-width:660px)
 {
@@ -690,13 +705,22 @@ i
     {
         width:70%;
     }
+    .border_menu
+    {
+        width:35%;
+    }
 }
+
 @media all and (max-width:600px)
 {
     body 
     {
         width:auto;
         margin:0;
+    }
+    .logo
+    {
+        margin-right:150px;
     }
     header
     {
@@ -740,6 +764,10 @@ i
         justify-content: flex-start;
         margin-left:40px;
     }
+    .border_menu
+   {
+       width:80%;
+   }
 }
 @media all and (max-width:380px)
 {
@@ -825,22 +853,38 @@ i
     /*menu*/
     .logo
     {
-        margin-right:120px;
+        margin-right:100px;
+    }
+    .title
+    {
+        font-size: 1.1rem;
+    }
+    .color
+    {
+        margin-bottom: 5px;
     }
     .background_menu
     {
         width:auto;
-        margin-bottom:50px;
     }
     .bloc_menu
     {
         width:100%;
     }
-  
+   .border_menu
+   {
+       width:80%;
+   }
     .title
     {
         width:300px;
     }
 }
 
-
+@media all and (max-width:300px)
+{
+    .logo
+    {
+       width:100%;
+    }
+}
