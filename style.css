@@ -14,8 +14,8 @@ h2, p , h3, a, span
     margin-top:5px;
     margin-bottom:5px;
 }
-                                   
-                                            /*loader*/
+                    
+/*loader*/
                                             
                                             
 .loader
@@ -131,8 +131,7 @@ h2, p , h3, a, span
 {
     animation-delay: 0.10s;
 }
-
-                            /*formulaire*/
+  /*formulaire*/
 form
 {
     width:100%;
@@ -223,7 +222,7 @@ section h2
     counter-reset: number;
     font-weight: bold;
     flex-wrap: wrap;
-    width:100%;
+    width:auto;
 }
 .list::before
 {
@@ -349,8 +348,7 @@ i
     width:85%;
     justify-content: space-between;
     font-size:1.1em;
-    column-gap: 30px;
-      
+    column-gap: 30px;    
 }
 .color{
     display:flex;
@@ -477,13 +475,19 @@ i
     justify-content:center;
     width:100%;  
 }
-
+.bloc_menu
+{
+    display:flex;
+    flex-direction:column;
+   padding-bottom: 20px;
+   width:92%;
+}
 .border_menu
 {
     border:2px solid transparent;
     justify-content: center;
     background-color:white;
-    border-radius: 25px;
+    border-radius: 15px;
     margin:10px;
     padding-right:20px;
     padding-left:20px;
@@ -543,6 +547,7 @@ i
     white-space: nowrap;
     overflow:hidden;
     text-overflow: ellipsis;
+    flex:1;
 }
 .price_menu
 {
@@ -561,7 +566,7 @@ i
     justify-content: center;
     position:absolute;
     border: 2px solid transparent;
-    width:65px;
+    width:63px;
     height:100%;
     top:15px;
     right:10px;
@@ -605,13 +610,7 @@ i
          transform: translateX(0);
     }
 }
-.bloc_menu
-{
-    display:flex;
-    flex-direction:column;
-   padding-bottom: 20px;
-   width:90%;
-}
+
 .commande
 {
     margin-top: 30px;
@@ -639,7 +638,7 @@ i
     }
     .function
     {     
-        width:100%;
+        width:auto;
     }
     .carte
     {
@@ -682,6 +681,7 @@ i
         width:auto;
         padding-right:5px;
     }
+   
     .bloc
     {
         width:100%;
@@ -724,6 +724,10 @@ i
     .border_menu
     {
         width:100%;
+    }
+    .function
+    {
+        width:auto;
     }
     .logo
     {
@@ -927,7 +931,14 @@ i
    {
        margin-right:50px;
    }
-   
+   .ingredient
+   {
+       font-size:15px;
+   }
+   h2 
+   {
+       font-size: 18px;
+   }
 }
 
 @media all and (max-width:300px)
