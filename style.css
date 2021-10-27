@@ -15,7 +15,7 @@ h2, p , h3, a, span
     margin-bottom:5px;
 }
                     
-/*loader*/
+                /*LOADER*/
                                             
                                             
 .loader
@@ -131,7 +131,7 @@ h2, p , h3, a, span
 {
     animation-delay: 0.10s;
 }
-  /*formulaire*/
+                /*FORMULAIRE*/
 form
 {
     width:100%;
@@ -157,6 +157,8 @@ form
 {
     color:black;
 }
+
+            /*TEXTE D'INTRODUCTION*/
 #intro
 {
     display:flex;
@@ -183,7 +185,7 @@ form
     justify-content: center;
 
 }
-
+                /*BOUTON*/
 
 .btn
 {
@@ -211,6 +213,7 @@ section h2
     margin-left:30px;
     margin-top:20px;
 }
+                        /*FONCTIONNEMENT*/
 .function
 {
     display:flex;
@@ -259,6 +262,8 @@ i
 {
     color:#9356DC;
 }
+
+                        /*RESTAURANTS*/
 .bloc
 {
     display:flex;
@@ -292,6 +297,9 @@ i
 {
     margin-top:0;
 }
+
+/*NOUVEAU*/
+
 .carte .new
 {
     background-color: #99E2D0;
@@ -317,12 +325,7 @@ i
     object-fit:cover;
 }
 
-.bloc_footer
-{
-    display:flex;
-    flex-direction: column;
-    text-align: center;
-}
+
 .description
 {
     margin-left:20px;
@@ -333,6 +336,7 @@ i
     color:black;
 
 }
+                                /*COEUR*/
 .heart
 {
     display:flex;
@@ -343,13 +347,7 @@ i
     text-decoration: none;
     white-space:nowrap ;
 }
-.title
-{
-    width:85%;
-    justify-content: space-between;
-    font-size:1.1em;
-    column-gap: 30px;    
-}
+
 .color{
     display:flex;
     justify-content: center;
@@ -404,6 +402,8 @@ i
         text-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 40%);
     }
 }
+
+                        /*FOOTER*/
 .fond
 {
     background-color: rgb(48, 45, 45);
@@ -432,8 +432,7 @@ i
 
 }
 
-
-/*menu*/
+                            /*PAGE MENU*/
 
 .logo
 {
@@ -459,7 +458,13 @@ i
     height:300px;
     object-fit:cover;
 }
-
+.title
+{
+    width:85%;
+    justify-content: space-between;
+    font-size:1.1em;
+    column-gap: 30px;    
+}
 .border_bottom
 {
     border-bottom:4px solid #99E2D0;
@@ -475,6 +480,7 @@ i
     justify-content:center;
     width:100%;  
 }
+
 .bloc_menu
 {
     display:flex;
@@ -482,6 +488,7 @@ i
    padding-bottom: 20px;
    width:92%;
 }
+/*ANIMATION BLOC*/
 .border_menu
 {
     border:2px solid transparent;
@@ -536,6 +543,13 @@ i
     margin-right:30px;
     overflow: hidden;
 }
+.carte_menu
+{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:auto;   
+}
 .carte_menu:hover .margin-right
 {
     margin-right:40px;
@@ -552,8 +566,6 @@ i
 .price_menu
 {
     font-weight:bold;
-   
-   
 }
 .carte_menu:hover .price_menu:hover
 {
@@ -574,26 +586,16 @@ i
     background-color:#99E2D0;
     margin:-1rem -5rem -1rem 2rem;
 }
-
-
-
-.check,.menu-icon
-{   color:white;
-    font-size:20px;
-    
-}
 .border_menu:hover .menu-icon-check
 {   transform:rotate(360deg);
     transition:transform 1s;
 }
-.carte_menu
-{
-    display:flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    width:auto;
-    
+
+.check,.menu-icon
+{   color:white;
+    font-size:20px;  
 }
+
 .border_menu:hover .check 
 {
     margin-right: -1rem ;
@@ -610,13 +612,22 @@ i
          transform: translateX(0);
     }
 }
-
+        /*BOUTON COMMANDER*/
 .commande
 {
     margin-top: 30px;
     display:flex;
     justify-content: center;
     align-items: center;
+}
+                            /*FOOTER*/
+
+
+ .bloc_footer
+{
+display:flex;
+flex-direction: column;
+text-align: center;
 }
 
 /*MEDIA QUERIES*/
