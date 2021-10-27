@@ -488,7 +488,7 @@ i
    padding-bottom: 20px;
    width:92%;
 }
-/*ANIMATION BLOC*/
+                    /*ANIMATION BLOC*/
 .border_menu
 {
     border:2px solid transparent;
@@ -502,18 +502,11 @@ i
     overflow:hidden;
     position:relative;
     width:340px;
-   transform-origin: bottom;
-	        animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+   /*transform-origin: bottom;
+	        animation: slide-top 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;*/
 
 }
-@keyframes slide-top {
-    0% {
-        transform: translateY(50px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
+
 .border_menu:hover 
 {
     overflow:hidden;
@@ -548,7 +541,50 @@ i
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
-    width:auto;   
+    width:auto;  
+    transform-origin: left;
+    transform:scale(1);
+}
+
+.animation1
+{
+    animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s forwards;
+}
+@keyframes slide-bottom {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.animation2
+{
+    
+    animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s forwards;
+}
+@keyframes slide-bottom {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.animation3
+{
+    
+    animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s forwards;
+}
+@keyframes slide-bottom {
+    0% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
 }
 .carte_menu:hover .margin-right
 {
@@ -572,6 +608,7 @@ i
     transition:transform 0.3s linear;
 }
 
+
 .check
 {   display:flex;
     align-items: center;
@@ -585,15 +622,6 @@ i
     border-radius:0 20px 20px 0;
     background-color:#99E2D0;
     margin:-1rem -5rem -1rem 2rem;
-}
-.border_menu:hover .menu-icon-check
-{   transform:rotate(360deg);
-    transition:transform 1s;
-}
-
-.check,.menu-icon
-{   color:white;
-    font-size:20px;  
 }
 
 .border_menu:hover .check 
@@ -612,6 +640,16 @@ i
          transform: translateX(0);
     }
 }
+.check,.menu-icon
+{   color:white;
+    font-size:20px;  
+}
+.border_menu:hover .menu-icon-check
+{   transform:rotate(360deg);
+    transition:transform 1s;
+}
+
+
         /*BOUTON COMMANDER*/
 .commande
 {
@@ -673,11 +711,12 @@ text-align: center;
         margin-right:40%;
     }
 }
+
 @media all and (max-width:800px)
 {
     body 
     {
-        width:auto;
+        width:100%;
     }
     .justify
     {
@@ -692,7 +731,11 @@ text-align: center;
         width:auto;
         padding-right:5px;
     }
-   
+   .background
+   {
+       padding-left:5px;
+       padding-right:25px;
+   }
     .bloc
     {
         width:100%;
@@ -700,6 +743,7 @@ text-align: center;
     .carte
     {
         width:45%;
+        margin-left:0px;
     }
     .carte .new
     {
