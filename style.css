@@ -542,13 +542,15 @@ i
     flex-direction: row;
     flex-wrap:wrap;
     width:auto;  
-    transform-origin: left;
-    transform:scale(1);
+    transform-origin: bottom;
+    transform:scaleY(0);
+    
 }
 
 .animation1
 {
-    animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s forwards;
+    animation: slide-bottom 1s ease-in 1s forwards;
+    
 }
 @keyframes slide-bottom {
     0% {
@@ -562,11 +564,13 @@ i
 .animation2
 {
     
-    animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s forwards;
+    animation: slide-bottom 1s ease-in 2s forwards;
+    
 }
 @keyframes slide-bottom {
     0% {
         transform: scaleY(0);
+     
     }
     100% {
         transform: scaleY(1);
@@ -576,14 +580,16 @@ i
 .animation3
 {
     
-    animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s forwards;
+    animation: slide-bottom 1s ease-in 3s forwards;
 }
 @keyframes slide-bottom {
     0% {
         transform: scaleY(0);
+       
     }
     100% {
         transform: scaleY(1);
+        
     }
 }
 .carte_menu:hover .margin-right
